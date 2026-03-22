@@ -8,6 +8,10 @@ An agentic AI coding assistant from Anthropic that runs in your terminal, autono
 ### [Codex]()
 A cloud-based software engineering agent that autonomously writes, debugs, and tests code across multiple programming languages by executing tasks in parallel within isolated sandbox environments.
 
+### [Gemini CLI](https://geminicli.com/)
+An open-source AI agent from Google that brings the power of Gemini models directly to your terminal, enabling you to query codebases, automate tasks, and generate applications using natural language commands.
+
+
 ### [OpenCode]()
 An open-source AI coding agent that runs in your terminal, allowing developers to write, debug, and refactor code using natural language while maintaining privacy and supporting 75+ LLM providers.
 
