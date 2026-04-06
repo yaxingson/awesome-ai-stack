@@ -124,11 +124,15 @@ curl --request POST \
 ### Python
 
 - `openai`
-- `anthropic`
+- [`anthropic`](https://github.com/anthropics/anthropic-sdk-python)
 - `dashscope`
 
 
-### JavaScript
+### Node.js
+
+- `@anthropic-ai/sdk`
+
+
 
 
 
