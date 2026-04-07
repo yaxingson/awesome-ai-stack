@@ -6,9 +6,17 @@
 ## Stack
 
 
+
 ## Contributing
+
+
 
 
 ## License
 
+
+
+## Star History
+
+![star history](https://api.star-history.com/chart?repos=yaxingson/awesome-ai-stack&type=date&legend=top-left)
 
