@@ -134,15 +134,10 @@ curl --request POST \
 
 
 
+## 库和框架
 
 
-## CLI
 
-### 自主编码
-
-- `Claude Code`
-- `Codex CLI`
-- `Gemini CLI`
 
 
 
