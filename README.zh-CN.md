@@ -10,7 +10,7 @@
 
 ### 层
 
-1. [应用](./apps/README.zh-CN.md)
+1. 🖥️ [应用](./apps/README.zh-CN.md)
 2. [工具](./tools/README.zh-CN.md)
 3. [标准](./standards/README.zh-CN.md)
 4. [模型](./models/README.zh-CN.md)
