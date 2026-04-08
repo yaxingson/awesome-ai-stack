@@ -38,7 +38,7 @@ API示例：
 
 ```http
 @BASE_URL = https://api.deepseek.com 
-@API_KEY = sk-1917a47ce3534ffb850695d76b41ce89
+@API_KEY = sk-****************************
 
 POST {{BASE_URL}}/chat/completions HTTP/1.1
 Content-Type: application/json
@@ -83,7 +83,7 @@ Authorization: Bearer {{API_KEY}}
 
 ```http
 @BASE_URL = https://api.deepseek.com/beta
-@API_KEY = sk-1917a47ce3534ffb850695d76b41ce89
+@API_KEY = sk-****************************
 
 POST {{BASE_URL}}/completions HTTP/1.1
 Content-Type: application/json
@@ -112,7 +112,7 @@ Authorization: Bearer {{API_KEY}}
 
 ```http
 @BASE_URL = https://api.deepseek.com
-@API_KEY = sk-1917a47ce3534ffb850695d76b41ce89
+@API_KEY = sk-****************************
 
 GET {{BASE_URL}}/models HTTP/1.1
 Accept: application/json
@@ -124,7 +124,7 @@ Authorization: Bearer {{API_KEY}}
 
 ```http
 @BASE_URL = https://api.deepseek.com
-@API_KEY = sk-1917a47ce3534ffb850695d76b41ce89
+@API_KEY = sk-****************************
 
 GET {{BASE_URL}}/user/balance HTTP/1.1
 Accept: application/json
@@ -142,7 +142,7 @@ Authorization: Bearer {{API_KEY}}
 
 ```http
 @BASE_URL = https://api.minimaxi.com
-@API_KEY = sk-api-HQZAwfNLX6I-A3UAwQn7idZ39pVGRU07pwcRAhZVDhiqRcfjY5VIszbLqP-fk-TZPCxyZL7kOwkcZWtQnWWrybQP6xao3BfAs308VYxRD1lTcS_jEMlQvIo
+@API_KEY = sk-****************************
 
 POST {{BASE_URL}}/v1/text/chatcompletion_v2 HTTP/1.1
 Content-Type: application/json
