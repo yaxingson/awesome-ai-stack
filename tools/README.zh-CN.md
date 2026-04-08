@@ -32,6 +32,17 @@ curl -X POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions 
 
 #### DeepSeek
 
+```http
+POST https://httpbin.org/post
+Content-Type: application/json
+
+{"name": "张三", "email": "zhang@example.com"}
+```
+
+
+
+
+
 示例：
 
 ```sh
@@ -133,22 +144,39 @@ curl --request POST \
 - `@anthropic-ai/sdk`
 
 
-
 ## 库和框架
 
+### 模型训练
 
+- [PyTorch]()
+- [TensorFlow]()
+- [Scikit-learn]()
+- [Unsloth]()
+- [Hugging Face Transformers]()
 
+### 推理和部署
 
+- [vLLM]()
+- [TGI (Text Generation Inference)]()
+- [TensorRT-LLM]()
 
+### 检索增强生成
 
+- [LangChain]()
+- [LlamaIndex]()
+- [Milvus]()
+- [Faiss]()
 
+### 构建Agent
 
+- [LangGraph]()
+- [CrewAI]()
+- [MetaGPT]()
+- [OpenAI Agents SDK]()
+- [BabyAGI]()
+- [AutoGPT]()
 
+## CLI
 
-
-
-
-
-
-
-
+- [ollama]()
+- [tlm]()

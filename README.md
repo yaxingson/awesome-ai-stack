@@ -14,12 +14,20 @@
 2. [Tools](./tools/README.md)
 3. [Standards](./standards/README.md)
 4. [Models](./models/README.md)
-5. [Papers](./papers/README.md)
+5. [Datasets](./datasets/README.md)
+6. [Papers](./papers/README.md)
 
 
 ## Contributing
 
 
+## Reference Projects
+
+- [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps)
+- [e2b-dev/awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents)
+- [owainlewis/awesome-artificial-intelligence](https://github.com/owainlewis/awesome-artificial-intelligence)
+- [Arindam200/awesome-ai-apps](https://github.com/Arindam200/awesome-ai-apps)
+- [ai-collection/ai-collection](https://github.com/ai-collection/ai-collection)
 
 ## License
 
