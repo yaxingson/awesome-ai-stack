@@ -9,9 +9,11 @@
 ## AI搜索
 
 - [Perplexity AI]()
-- [Notebook LM]()
 
 
+## 研究助手
+
+- [NotebookLM]()
 
 
 ## 聊天助手
