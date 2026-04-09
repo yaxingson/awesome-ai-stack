@@ -36,7 +36,7 @@ API示例：
 
 <details>
   <summary>补全对话</summary>
-  <pre>
+  <div>
 
   ```http
   @BASE_URL = https://api.deepseek.com 
@@ -80,12 +80,12 @@ API示例：
   }
   ```
   
-  </pre>
+  </div>
 </details>
 
 <details>
   <summary>`FIM(Fill-In-the-Middle)`补全</summary>
-  <pre>
+  <div>
 
   ```http
   @BASE_URL = https://api.deepseek.com/beta
@@ -114,12 +114,12 @@ API示例：
 
   ```
   
-  </pre>
+  </div>
 </details>
 
 <details>
   <summary>列出模型</summary>
-  <pre>
+  <div>
 
   ```http
   @BASE_URL = https://api.deepseek.com
@@ -131,12 +131,12 @@ API示例：
 
   ```
 
-  </pre>
+  </div>
 </details>
 
 <details>
   <summary>查询余额</summary>
-  <pre>
+  <div>
 
   ```http
   @BASE_URL = https://api.deepseek.com
@@ -148,7 +148,7 @@ API示例：
 
   ```
 
-  </pre>
+  </div>
 </details>
 
 [API文档](https://api-docs.deepseek.com/zh-cn/)
