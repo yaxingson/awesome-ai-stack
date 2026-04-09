@@ -4,29 +4,26 @@
 
 ### 模型厂商
 
+#### OpenAI
+
+
+#### Anthropic
+
+
+#### Google
+
+
+#### xAI
+
+
 #### Qwen
 
-示例：
+API示例：
 
-```sh
-curl -X POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions \
--H "Authorization: Bearer $DASHSCOPE_API_KEY" \
--H "Content-Type: application/json" \
--d '{
-    "model": "qwen-plus",
-    "messages": [
-        {
-            "role": "system",
-            "content": "You are a helpful assistant."
-        },
-        {
-            "role": "user",
-            "content": "你是谁？"
-        }
-    ]
-}'
 
-```
+
+
+
 
 [API文档](https://help.aliyun.com/zh/model-studio/model-api-reference/)
 
@@ -155,46 +152,52 @@ API示例：
 
 #### MiniMax
 
-示例：
+API示例：
 
-1. 文本对话
+<details>
+  <summary>补全对话</summary>
+  <div>
 
-```http
-@BASE_URL = https://api.minimaxi.com
-@API_KEY = sk-****************************
+  ```http
+  @BASE_URL = https://api.minimaxi.com
+  @API_KEY = sk-****************************
 
-POST {{BASE_URL}}/v1/text/chatcompletion_v2 HTTP/1.1
-Content-Type: application/json
-Authorization: Bearer {{API_KEY}}
+  POST {{BASE_URL}}/v1/text/chatcompletion_v2 HTTP/1.1
+  Content-Type: application/json
+  Authorization: Bearer {{API_KEY}}
 
-{
-  "model": "M2-her",
-  "messages": [
-    {
-      "role": "system",
-      "name": "MiniMax AI"
-    },
-    {
-      "role": "user",
-      "content": "你好",
-      "name": "用户"
-    }
-  ]
-}
+  {
+    "model": "M2-her",
+    "messages": [
+      {
+        "role": "system",
+        "name": "MiniMax AI"
+      },
+      {
+        "role": "user",
+        "content": "你好",
+        "name": "用户"
+      }
+    ]
+  }
 
-```
+  ```
+
+  </div>
+</details>
+
 
 [API文档](https://platform.minimaxi.com/docs/guides/models-intro)
 
 ### 聚合平台
 
-#### OpenRouter
+#### [OpenRouter](https://openrouter.ai/docs/quickstart)
 
-[文档](https://openrouter.ai/docs/quickstart)
 
-#### N1N
+#### [n1n](https://docs.n1n.ai/)
 
-[文档](https://docs.n1n.ai/)
+
+### [SiliconFlow](https://docs.siliconflow.cn/cn/userguide/introduction)
 
 
 ### 第三方服务
