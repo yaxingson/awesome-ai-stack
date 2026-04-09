@@ -34,103 +34,122 @@ curl -X POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions 
 
 API示例：
 
-1. 补全对话
+<details>
+  <summary>补全对话</summary>
+  <pre>
 
-```http
-@BASE_URL = https://api.deepseek.com 
-@API_KEY = sk-****************************
+  ```http
+  @BASE_URL = https://api.deepseek.com 
+  @API_KEY = sk-****************************
 
-POST {{BASE_URL}}/chat/completions HTTP/1.1
-Content-Type: application/json
-Accept: application/json
-Authorization: Bearer {{API_KEY}}
+  POST {{BASE_URL}}/chat/completions HTTP/1.1
+  Content-Type: application/json
+  Accept: application/json
+  Authorization: Bearer {{API_KEY}}
 
-{
-  "model": "deepseek-chat",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a helpful assistant."
+  {
+    "model": "deepseek-chat",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "你是谁？"
+      }
+    ],
+    "thinking":{
+      "type":"disabled"
     },
-    {
-      "role": "user",
-      "content": "你是谁？"
-    }
-  ],
-  "thinking":{
-    "type":"disabled"
-  },
-  "frequency_penalty": 0,
-  "max_tokens": 4096,
-  "presence_penalty": 0,
-  "response_format": {
-    "type": "text"
-  },
-  "stop": null,
-  "stream": false,
-  "stream_options": null,
-  "temperature": 1,
-  "top_p": 1,
-  "tools": null,
-  "tool_choice": "none",
-  "logprobs": false,
-  "top_logprobs": null
-}
+    "frequency_penalty": 0,
+    "max_tokens": 4096,
+    "presence_penalty": 0,
+    "response_format": {
+      "type": "text"
+    },
+    "stop": null,
+    "stream": false,
+    "stream_options": null,
+    "temperature": 1,
+    "top_p": 1,
+    "tools": null,
+    "tool_choice": "none",
+    "logprobs": false,
+    "top_logprobs": null
+  }
+  ```
+  
+  </pre>
+</details>
 
-```
+<details>
+  <summary>`FIM(Fill-In-the-Middle)`补全</summary>
+  <pre>
 
-2. `FIM(Fill-In-the-Middle)`补全
+  ```http
+  @BASE_URL = https://api.deepseek.com/beta
+  @API_KEY = sk-****************************
 
-```http
-@BASE_URL = https://api.deepseek.com/beta
-@API_KEY = sk-****************************
+  POST {{BASE_URL}}/completions HTTP/1.1
+  Content-Type: application/json
+  Accept: application/json
+  Authorization: Bearer {{API_KEY}}
 
-POST {{BASE_URL}}/completions HTTP/1.1
-Content-Type: application/json
-Accept: application/json
-Authorization: Bearer {{API_KEY}}
+  {
+    "model": "deepseek-chat",
+    "prompt": "很久很久以前, ",
+    "echo": false,
+    "frequency_penalty": 0,
+    "logprobs": 0,
+    "max_tokens": 1024,
+    "presence_penalty": 0,
+    "stop": null,
+    "stream": false,
+    "stream_options": null,
+    "suffix": null,
+    "temperature": 1,
+    "top_p": 1
+  }
 
-{
-  "model": "deepseek-chat",
-  "prompt": "很久很久以前, ",
-  "echo": false,
-  "frequency_penalty": 0,
-  "logprobs": 0,
-  "max_tokens": 1024,
-  "presence_penalty": 0,
-  "stop": null,
-  "stream": false,
-  "stream_options": null,
-  "suffix": null,
-  "temperature": 1,
-  "top_p": 1
-}
+  ```
+  
+  </pre>
+</details>
 
-```
+<details>
+  <summary>列出模型</summary>
+  <pre>
 
-3. 列出模型
+  ```http
+  @BASE_URL = https://api.deepseek.com
+  @API_KEY = sk-****************************
 
-```http
-@BASE_URL = https://api.deepseek.com
-@API_KEY = sk-****************************
+  GET {{BASE_URL}}/models HTTP/1.1
+  Accept: application/json
+  Authorization: Bearer {{API_KEY}}
 
-GET {{BASE_URL}}/models HTTP/1.1
-Accept: application/json
-Authorization: Bearer {{API_KEY}}
+  ```
 
-```
+  </pre>
+</details>
 
-4. 查询余额
+<details>
+  <summary>查询余额</summary>
+  <pre>
 
-```http
-@BASE_URL = https://api.deepseek.com
-@API_KEY = sk-****************************
+  ```http
+  @BASE_URL = https://api.deepseek.com
+  @API_KEY = sk-****************************
 
-GET {{BASE_URL}}/user/balance HTTP/1.1
-Accept: application/json
-Authorization: Bearer {{API_KEY}}
+  GET {{BASE_URL}}/user/balance HTTP/1.1
+  Accept: application/json
+  Authorization: Bearer {{API_KEY}}
 
-```
+  ```
+
+  </pre>
+</details>
 
 [API文档](https://api-docs.deepseek.com/zh-cn/)
 
